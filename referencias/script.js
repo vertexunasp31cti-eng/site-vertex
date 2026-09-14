@@ -19,7 +19,7 @@ function aplicarTema(tema) {
     }
 }
 
-const temaSalvo = localStorage.getItem("mindmovie-tema") || "dark";
+const temaSalvo = localStorage.getItem("mindmovie-theme") || "dark";
 
 aplicarTema(temaSalvo);
 
@@ -33,13 +33,31 @@ themeToggle.addEventListener("click", function () {
         ? "dark"
         : "light";
 
-    localStorage.setItem("mindmovie-tema", novoTema);
+    localStorage.setItem("mindmovie-theme", novoTema);
 
     aplicarTema(novoTema);
 });
 
 menuButton.addEventListener("click", function () {
 
-    nav.classList.toggle("active");
+    const aberto = nav.classList.toggle("active");
+
+    // A classe no botao e o que vira as tres barras em X.
+    menuButton.classList.toggle("active", aberto);
+
+    menuButton.setAttribute("aria-expanded", aberto ? "true" : "false");
+
+});
+
+// Fecha o menu ao escolher um destino.
+nav.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        nav.classList.remove("active");
+        menuButton.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+
+    });
 
 });
