@@ -1,13 +1,8 @@
-/* ========================================
-   CONFIGURAÇÕES GERAIS
-======================================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --preto: #020307;
@@ -24,11 +19,9 @@
     --roxo: #9b84ed;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     min-height: 100vh;
@@ -45,230 +38,14 @@ body {
         color 0.3s ease;
 }
 
-
 a {
     color: inherit;
     text-decoration: none;
 }
 
-
 button {
     font-family: inherit;
 }
-
-
-/* ========================================
-   CABEÇALHO
-======================================== */
-
-.cabecalho {
-    position: fixed;
-
-    z-index: 1000;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 58px;
-
-    padding: 0 22px;
-
-    display: flex;
-    align-items: center;
-
-    background: #030305;
-
-    border-bottom: 1px solid #17171c;
-
-    transition:
-        background 0.3s ease,
-        border-color 0.3s ease;
-}
-
-
-/* ========================================
-   LOGO
-======================================== */
-
-.logo {
-    display: flex;
-    align-items: center;
-
-    gap: 7px;
-
-    color: #ffffff;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    white-space: nowrap;
-}
-
-
-.logo img {
-    width: 31px;
-    height: 31px;
-
-    object-fit: contain;
-}
-
-
-.logo span {
-    color: #ffffff;
-
-    transition: color 0.3s ease;
-}
-
-
-/* ========================================
-   MENU
-======================================== */
-
-.menu {
-    display: flex;
-    align-items: center;
-
-    gap: 42px;
-
-    /* deixa o menu puxado para a direita */
-    margin-left: auto;
-}
-
-
-.menu a {
-    color: #ffffff;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    white-space: nowrap;
-
-    transition: color 0.2s ease;
-}
-
-
-.menu a:hover {
-    color: #9b84ed;
-}
-
-
-.menu a.ativo {
-    color: #9b84ed;
-}
-
-
-/* ========================================
-   BOTÃO CLARO / ESCURO
-======================================== */
-
-.theme-toggle {
-    margin-left: 18px;
-
-    height: 29px;
-
-    padding: 0 9px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 7px;
-
-    background: #08080b;
-
-    border: 1px solid #202027;
-    border-radius: 20px;
-
-    cursor: pointer;
-
-    transition:
-        background 0.3s ease,
-        border-color 0.3s ease;
-}
-
-
-.theme-toggle:hover {
-    border-color: #3b3b44;
-}
-
-
-.theme-icon {
-    width: 14px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 13px;
-    line-height: 1;
-
-    transition: color 0.3s ease;
-}
-
-
-.theme-icon.moon {
-    color: #ffffff;
-}
-
-
-.theme-icon.sun {
-    color: #44444c;
-}
-
-
-.theme-line {
-    width: 1px;
-    height: 17px;
-
-    background: #29292f;
-
-    transition: background 0.3s ease;
-}
-
-
-/* ========================================
-   BOTÃO MENU MOBILE
-======================================== */
-
-.botao-menu {
-    display: none;
-
-    width: 32px;
-    height: 32px;
-
-    margin-left: 10px;
-
-    border: none;
-
-    background: transparent;
-
-    cursor: pointer;
-}
-
-
-.botao-menu span {
-    display: block;
-
-    width: 20px;
-    height: 2px;
-
-    margin: 4px auto;
-
-    background: #ffffff;
-
-    border-radius: 5px;
-
-    transition:
-        transform 0.3s ease,
-        opacity 0.3s ease,
-        background 0.3s ease;
-}
-
-
-/* ========================================
-   PÁGINA
-======================================== */
 
 .pagina-como-utilizar {
     width: 100%;
@@ -290,7 +67,6 @@ button {
     transition: background 0.3s ease;
 }
 
-
 .conteudo {
     width: 100%;
     max-width: 1400px;
@@ -308,15 +84,9 @@ button {
     gap: 60px;
 }
 
-
-/* ========================================
-   TÍTULO
-======================================== */
-
 .titulo-pagina {
     margin-bottom: 30px;
 }
-
 
 .titulo-pagina h1 {
     margin-bottom: 15px;
@@ -329,7 +99,6 @@ button {
     transition: color 0.3s ease;
 }
 
-
 .titulo-pagina p {
     color: var(--cinza-claro);
 
@@ -339,15 +108,9 @@ button {
     transition: color 0.3s ease;
 }
 
-
-/* ========================================
-   PASSOS
-======================================== */
-
 .instrucoes {
     width: 100%;
 }
-
 
 .passo {
     position: relative;
@@ -359,7 +122,6 @@ button {
 
     gap: 18px;
 }
-
 
 .passo:not(:last-child)::after {
     content: "";
@@ -374,7 +136,6 @@ button {
 
     background: #303030;
 }
-
 
 .numero {
     position: relative;
@@ -400,11 +161,9 @@ button {
     font-weight: 700;
 }
 
-
 .texto-passo {
     padding-top: 1px;
 }
-
 
 .texto-passo h2 {
     margin-bottom: 8px;
@@ -417,7 +176,6 @@ button {
     transition: color 0.3s ease;
 }
 
-
 .texto-passo p {
     max-width: 420px;
 
@@ -428,11 +186,6 @@ button {
 
     transition: color 0.3s ease;
 }
-
-
-/* ========================================
-   DEMONSTRAÇÃO
-======================================== */
 
 .demonstracao {
     width: 100%;
@@ -446,7 +199,6 @@ button {
 
     gap: 38px;
 }
-
 
 .card-video {
     width: 100%;
@@ -478,7 +230,6 @@ button {
         color 0.3s ease;
 }
 
-
 .card-video:hover {
     transform: translateY(-5px);
 
@@ -487,9 +238,6 @@ button {
     box-shadow:
         0 20px 45px rgba(0, 0, 0, 0.4);
 }
-
-
-/* PLAY */
 
 .icone-play {
     position: relative;
@@ -508,7 +256,6 @@ button {
     border-radius: 50%;
 }
 
-
 .triangulo {
     width: 0;
     height: 0;
@@ -520,7 +267,6 @@ button {
 
     border-left: 25px solid #ffffff;
 }
-
 
 .titulo-video {
     margin-bottom: 37px;
@@ -534,18 +280,12 @@ button {
     text-align: center;
 }
 
-
 .duracao-video {
     color: #9f9f9f;
 
     font-size: 11px;
     font-weight: 600;
 }
-
-
-/* ========================================
-   AVISO
-======================================== */
 
 .aviso {
     width: 100%;
@@ -571,7 +311,6 @@ button {
         border-color 0.3s ease;
 }
 
-
 .icone-aviso {
     flex-shrink: 0;
 
@@ -592,7 +331,6 @@ button {
     font-weight: 700;
 }
 
-
 .aviso p {
     color: #777777;
 
@@ -603,15 +341,9 @@ button {
     text-align: center;
 }
 
-
 .aviso strong {
     color: #b9b9b9;
 }
-
-
-/* ========================================
-   MODAL VÍDEO
-======================================== */
 
 .modal-video {
     position: fixed;
@@ -635,13 +367,11 @@ button {
         visibility 0.3s ease;
 }
 
-
 .modal-video.aberto {
     visibility: visible;
 
     opacity: 1;
 }
-
 
 .fundo-modal {
     position: absolute;
@@ -652,7 +382,6 @@ button {
 
     backdrop-filter: blur(8px);
 }
-
 
 .conteudo-modal {
     position: relative;
@@ -674,7 +403,6 @@ button {
         0 25px 80px rgba(0, 0, 0, 0.8);
 }
 
-
 .conteudo-modal video {
     display: block;
 
@@ -686,7 +414,6 @@ button {
 
     background: #000000;
 }
-
 
 .fechar-video {
     position: absolute;
@@ -718,74 +445,15 @@ button {
     cursor: pointer;
 }
 
-
 .fechar-video:hover {
     background: #2c2c2c;
 }
-
-
-/* ==================================================
-   MODO CLARO
-================================================== */
 
 body.light {
     background: #ffffff;
 
     color: #111111;
 }
-
-
-/* CABEÇALHO */
-
-body.light .cabecalho {
-    background: #ffffff;
-
-    border-bottom-color: #e7e7eb;
-}
-
-
-body.light .logo,
-body.light .logo span {
-    color: #111111;
-}
-
-
-body.light .menu a {
-    color: #111111;
-}
-
-
-body.light .menu a:hover,
-body.light .menu a.ativo {
-    color: #7048e8;
-}
-
-
-/* BOTÃO TEMA */
-
-body.light .theme-toggle {
-    background: #f8f8fa;
-
-    border-color: #dedee4;
-}
-
-
-body.light .theme-icon.moon {
-    color: #a1a1aa;
-}
-
-
-body.light .theme-icon.sun {
-    color: #111111;
-}
-
-
-body.light .theme-line {
-    background: #d8d8dd;
-}
-
-
-/* PÁGINA */
 
 body.light .pagina-como-utilizar {
     background:
@@ -797,40 +465,31 @@ body.light .pagina-como-utilizar {
         #ffffff;
 }
 
-
 body.light .titulo-pagina h1 {
     color: #111111;
 }
-
 
 body.light .titulo-pagina p {
     color: #52525b;
 }
 
-
 body.light .texto-passo h2 {
     color: #18181b;
 }
-
 
 body.light .texto-passo p {
     color: #5f5f68;
 }
 
-
 body.light .passo:not(:last-child)::after {
     background: #d6d6dc;
 }
-
 
 body.light .numero {
     color: #ffffff;
 
     background: #18181b;
 }
-
-
-/* CARD VÍDEO */
 
 body.light .card-video {
     color: #111111;
@@ -840,7 +499,6 @@ body.light .card-video {
     border-color: #dedee3;
 }
 
-
 body.light .card-video:hover {
     border-color: #b9b9c1;
 
@@ -848,23 +506,17 @@ body.light .card-video:hover {
         0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
-
 body.light .icone-play {
     border-color: #111111;
 }
-
 
 body.light .triangulo {
     border-left-color: #111111;
 }
 
-
 body.light .duracao-video {
     color: #686872;
 }
-
-
-/* AVISO */
 
 body.light .aviso {
     background: #f7f7f9;
@@ -872,16 +524,13 @@ body.light .aviso {
     border-color: #e5e5e8;
 }
 
-
 body.light .aviso p {
     color: #686872;
 }
 
-
 body.light .aviso strong {
     color: #333338;
 }
-
 
 body.light .icone-aviso {
     color: #67676f;
@@ -889,137 +538,14 @@ body.light .icone-aviso {
     border-color: #a6a6ae;
 }
 
-
-body.light .botao-menu span {
-    background: #111111;
-}
-
-
-/* ========================================
-   TELAS MÉDIAS
-======================================== */
-
-@media (max-width: 1000px) {
-
-    .menu {
-        gap: 25px;
-    }
-
-
-    .menu a {
-        font-size: 9px;
-    }
-
-}
-
-
-/* ========================================
-   CELULAR / TABLET
-======================================== */
-
 @media (max-width: 800px) {
-
-    .cabecalho {
-        height: 60px;
-
-        padding: 0 18px;
-    }
-
-
-    .logo img {
-        width: 30px;
-        height: 30px;
-    }
-
-
-    /* BOTÃO MENU */
-
-    .botao-menu {
-        position: relative;
-
-        z-index: 1002;
-
-        display: block;
-    }
-
-
-    /* MENU MOBILE */
-
-    .menu {
-        position: fixed;
-
-        z-index: 1001;
-
-        top: 60px;
-        right: -100%;
-
-        width: 100%;
-        height: calc(100vh - 60px);
-
-        margin-left: 0;
-
-        padding: 40px 25px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        justify-content: flex-start;
-
-        gap: 28px;
-
-        background: rgba(2, 3, 7, 0.98);
-
-        transition: right 0.4s ease;
-    }
-
-
-    .menu.aberto {
-        right: 0;
-    }
-
-
-    .menu a {
-        padding: 5px 0;
-
-        font-size: 17px;
-    }
-
-
-    body.light .menu {
-        background: rgba(255, 255, 255, 0.98);
-    }
-
-
-    /* X DO MENU */
-
-    .botao-menu.ativo span:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-
-    .botao-menu.ativo span:nth-child(2) {
-        opacity: 0;
-    }
-
-
-    .botao-menu.ativo span:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
-
-
-    /* CONTEÚDO */
-
-    .pagina-como-utilizar {
+.pagina-como-utilizar {
         padding: 110px 22px 60px;
 
         align-items: flex-start;
     }
 
-
-    .conteudo {
+.conteudo {
         min-height: auto;
 
         display: flex;
@@ -1029,114 +555,68 @@ body.light .botao-menu span {
         gap: 55px;
     }
 
-
-    .titulo-pagina h1 {
+.titulo-pagina h1 {
         font-size: 30px;
     }
 
-
-    .titulo-pagina p {
+.titulo-pagina p {
         font-size: 13px;
     }
 
-
-    .passo {
+.passo {
         min-height: 83px;
     }
 
-
-    .passo:not(:last-child)::after {
+.passo:not(:last-child)::after {
         height: 54px;
     }
 
-
-    .texto-passo h2 {
+.texto-passo h2 {
         font-size: 15px;
     }
 
-
-    .texto-passo p {
+.texto-passo p {
         font-size: 12px;
     }
 
-
-    .demonstracao {
+.demonstracao {
         max-width: 100%;
 
         gap: 25px;
     }
 
-
-    .card-video {
+.card-video {
         min-height: 350px;
     }
 
-
-    .aviso p {
+.aviso p {
         font-size: 9px;
     }
 
-
-    .fechar-video {
+.fechar-video {
         top: -12px;
         right: -8px;
     }
 
 }
 
-
-/* ========================================
-   CELULARES PEQUENOS
-======================================== */
-
 @media (max-width: 480px) {
-
-    .logo span {
-        font-size: 12px;
-    }
-
-
-    .logo img {
-        width: 28px;
-        height: 28px;
-    }
-
-
-    .theme-toggle {
-        height: 27px;
-
-        padding: 0 7px;
-
-        gap: 5px;
-
-        margin-left: auto;
-    }
-
-
-    .theme-icon {
-        font-size: 12px;
-    }
-
-
-    .pagina-como-utilizar {
+.pagina-como-utilizar {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-
-    .titulo-pagina h1 {
+.titulo-pagina h1 {
         font-size: 26px;
     }
 
-
-    .card-video {
+.card-video {
         min-height: 320px;
 
         padding: 30px 18px;
     }
 
-
-    .icone-play {
+.icone-play {
         width: 75px;
         height: 75px;
 
@@ -1145,23 +625,20 @@ body.light .botao-menu span {
         border-width: 7px;
     }
 
-
-    .triangulo {
+.triangulo {
         border-top-width: 14px;
         border-bottom-width: 14px;
 
         border-left-width: 21px;
     }
 
-
-    .titulo-video {
+.titulo-video {
         margin-bottom: 30px;
 
         font-size: 13px;
     }
 
-
-    .aviso {
+.aviso {
         align-items: flex-start;
     }
 
