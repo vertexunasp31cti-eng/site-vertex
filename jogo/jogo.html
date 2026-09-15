@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MindMovie | Rise Circuit</title>
+
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         CABEÇALHO
+    ========================================= -->
+
+    <header class="cabecalho">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="logo.png"
+                alt="Logo MindMovie"
+            >
+
+            <span>MindMovie</span>
+
+        </a>
+
+
+        <!-- MENU -->
+
+        <nav class="menu" id="menu">
+
+            <a href="../inicio/index.html">
+                Visão geral
+            </a>
+            <a href="../como-utilizar/index.html">
+                Como utilizar
+            </a>
+
+            <a href="../componentes/index.html">
+                Componentes
+            </a>
+
+             <a href="../quem-somos/index.html">
+                Sobre Nós
+            </a>
+
+
+            <a href="../referencias/index.html">
+                Referências
+            </a>
+
+        </nav>
+
+
+        <!-- BOTÃO CLARO / ESCURO -->
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Alternar entre modo claro e escuro"
+        >
+
+            <span class="theme-icon moon">☾</span>
+
+            <span class="theme-line"></span>
+
+            <span class="theme-icon sun">☀</span>
+
+        </button>
+
+
+        <!-- MENU MOBILE -->
+
+        <button
+            class="botao-menu"
+            id="botaoMenu"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+    <!-- ========================================
+         CONTEÚDO
+    ========================================= -->
+
+    <main class="pagina-jogo">
+
+        <section class="conteudo-jogo">
+
+            <!-- LADO ESQUERDO -->
+
+            <div class="informacoes-jogo">
+
+                <div class="introducao">
+
+                    <h1>
+                        MindMove: Rise Circuit
+                    </h1>
+
+                    <p>
+                        “Um jogo complementar que evolui a tecnologia do
+                        NeuroMove para um novo nível de imersão.”
+                    </p>
+
+                </div>
+
+
+                <!-- HISTÓRIA -->
+
+                <div class="historia-jogo">
+
+                    <h2>
+                        História do jogo
+                    </h2>
+
+                    <p>
+                        MindMove: Rise Circuit é um jogo onde o jogador controla
+                        uma cadeira futurista usando apenas o poder da mente.
+                    </p>
+
+                    <p>
+                        O jogo combina velocidade, concentração e desafios em
+                        ambientes digitais novos de autonomia e controle.
+                    </p>
+
+                </div>
+
+
+                <!-- DESTAQUES -->
+
+                <div class="destaques">
+
+                    <h2>
+                        Destaque do jogo
+                    </h2>
+
+
+                    <div class="lista-destaques">
+
+                        <!-- VELOCIDADE -->
+
+                        <div class="destaque-item">
+
+                            <div class="icone-destaque velocidade">
+
+                                <span></span>
+
+                            </div>
+
+                            <p>
+                                Velocidade<br>
+                                foco
+                            </p>
+
+                        </div>
+
+
+                        <!-- CIRCUITOS -->
+
+                        <div class="destaque-item">
+
+                            <div class="icone-circuito">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <p>
+                                Circuitos<br>
+                                desafiantes
+                            </p>
+
+                        </div>
+
+
+                        <!-- DESAFIOS MENTAIS -->
+
+                        <div class="destaque-item sem-borda">
+
+                            <div class="icone-mente">
+                                ♟
+                            </div>
+
+                            <p>
+                                Desafios<br>
+                                mentais
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 CARD DO JOGO
+            ========================================= -->
+
+            <aside class="card-jogo">
+
+                <!-- ÍCONE GAMEPAD -->
+
+                <div class="circulo-game">
+
+                    <svg
+                        class="gamepad"
+                        viewBox="0 0 64 64"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M19 22h26c5 0 8 4 9 9l3 14c1 5-5 8-8 4l-6-7H21l-6 7c-3 4-9 1-8-4l3-14c1-5 4-9 9-9z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M21 29v10M16 34h10"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                        />
+
+                        <circle cx="43" cy="31" r="2.5" fill="currentColor"/>
+                        <circle cx="49" cy="37" r="2.5" fill="currentColor"/>
+
+                    </svg>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <a
+                    href="#"
+                    class="botao-jogar"
+                    id="botaoJogar"
+                >
+
+                    <svg
+                        class="icone-botao"
+                        viewBox="0 0 64 64"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M19 22h26c5 0 8 4 9 9l3 14c1 5-5 8-8 4l-6-7H21l-6 7c-3 4-9 1-8-4l3-14c1-5 4-9 9-9z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M21 29v10M16 34h10"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                        />
+
+                        <circle cx="43" cy="31" r="3" fill="currentColor"/>
+                        <circle cx="49" cy="37" r="3" fill="currentColor"/>
+
+                    </svg>
+
+                    <span>
+                        Jogar no 3Dcorrida
+                    </span>
+
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <script src="jogo.js"></script>
+
+</body>
+
+</html>
