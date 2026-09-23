@@ -14,9 +14,10 @@
 
     <link rel="icon" type="image/png" href="../imagens/logo.png">
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css?v=20260923-fit">
 
-    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../menu.css?v=brand-compact">
+    <script src="../menu.js" defer></script>
 </head>
 
 <body>
@@ -26,25 +27,19 @@
     ========================== -->
 
     <header class="header">
-        <a href="../inicio/index.html" class="logo">
-            <img src="../imagens/logo.png" alt="MindMovie">
-            <span>MindMovie</span>
-        </a>
-        <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="../inicio/index.html" class="logo"><img src="../imagens/logo.png" alt=""><span>MindMovie</span></a>
+        <nav class="nav" id="siteNav" aria-label="Navegação principal">
             <a href="../inicio/index.html">Visão geral</a>
+            <a href="../como-utilizar/index.html" aria-current="page">Como utilizar</a>
             <a href="../componentes/index.html">Componentes</a>
-            <a href="../quem-somos/index.html">Quem somos</a>
+            <a href="../quem-somos/index.html">Sobre nós</a>
             <a href="../referencias/index.html">Referências</a>
             <a href="../jogo/jogo.html">Jogo</a>
         </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar entre modo claro e escuro">
-            <span class="theme-icon moon" aria-hidden="true">☾</span>
-            <span class="theme-line" aria-hidden="true"></span>
-            <span class="theme-icon sun" aria-hidden="true">☀</span>
+        <button class="theme-toggle" id="siteTheme" type="button" aria-label="Ativar modo claro" aria-pressed="false">
+            <span class="theme-icon moon" aria-hidden="true">☾</span><span class="theme-line" aria-hidden="true"></span><span class="theme-icon sun" aria-hidden="true">☀</span>
         </button>
-        <button class="botao-menu" id="botaoMenu" type="button" aria-label="Abrir ou fechar menu" aria-controls="menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+        <button class="menu-button" id="siteMenu" type="button" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false"><span></span><span></span><span></span></button>
     </header>
 
 

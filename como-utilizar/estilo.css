@@ -643,3 +643,16 @@ body.light .icone-aviso {
     }
 
 }
+
+/* Ajuste da área útil abaixo do menu. */
+
+@media(min-width:901px) {
+ .pagina-como-utilizar { min-height:calc(100dvh - 64px); padding:24px 5%; }
+ .conteudo { min-height:0; grid-template-columns:minmax(0,1.08fr) minmax(0,1fr); gap:40px; }
+ .titulo-pagina { margin-bottom:20px; }
+ .passo { min-height:62px; }
+ .demonstracao { gap:24px; }
+ .card-video { min-height:clamp(280px,48vh,405px); padding:24px; }
+ .icone-play { margin-bottom:32px; }
+ .titulo-video { margin-bottom:24px; }
+}
