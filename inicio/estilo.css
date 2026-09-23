@@ -191,3 +191,14 @@ body.light .descricao {
     }
 
 }
+
+/* Ajuste da área útil abaixo do menu. */
+
+.inicio { min-height:calc(100dvh - 64px); overflow:clip; }
+@media(min-width:901px) {
+ .conteudo-inicio { padding:24px 5%; gap:32px; }
+ .texto-inicio h1 { font-size:clamp(48px, min(6vw, 10vh), 86px); margin-bottom:22px; }
+ .imagem-cadeira img { max-height:calc(100dvh - 112px); object-fit:contain; }
+ .brilho { width:min(500px,40vw); height:min(500px,60vh); }
+}
+@media(max-width:900px) { .inicio { min-height:calc(100dvh - 68px); } }
