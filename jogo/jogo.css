@@ -440,3 +440,43 @@ body.light .card-jogo {
     }
 
 }
+
+/* Ajuste da área útil abaixo do menu. */
+
+@media(min-width:901px) {
+ .pagina-jogo { min-height:calc(100dvh - 64px); padding-top:0; display:flex; align-items:center; }
+ .conteudo-jogo { min-height:0; padding:24px 28px; grid-template-columns:minmax(0,1.38fr) minmax(0,1fr); gap:40px; }
+ .introducao { margin-bottom:28px; }
+ .historia-jogo { margin-bottom:22px; }
+}
+
+/* Proporções equilibradas entre apresentação, destaques e cartão. */
+.pagina-jogo { padding-top:0; min-height:calc(100dvh - 64px); }
+.conteudo-jogo { max-width:1120px; min-height:0; padding:32px 36px; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:64px; }
+.introducao { margin-bottom:26px; }
+.introducao h1 { font-size:clamp(28px,2.8vw,38px); line-height:1.15; margin-bottom:14px; }
+.introducao p { max-width:480px; font-size:15px; line-height:1.55; }
+.historia-jogo { margin-bottom:26px; }
+.historia-jogo h2,.destaques h2 { margin:0 0 12px; font-size:16px; font-weight:600; }
+.historia-jogo p { font-size:14px; line-height:1.6; margin-bottom:10px; }
+.lista-destaques { margin-left:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.destaque-item { min-width:0; padding:4px 14px; }
+.destaque-item:first-child { padding-left:14px; }
+.destaque-item p { font-size:11px; line-height:1.4; margin-top:12px; }
+.icone-destaque,.icone-circuito,.icone-mente { transform:scale(1.2); transform-origin:center; }
+.card-jogo { max-width:380px; min-height:320px; padding:36px 30px; gap:32px; justify-self:center; justify-content:center; border-radius:18px; }
+.circulo-game { width:108px; height:108px; }
+.gamepad { width:58px; height:58px; }
+.botao-jogar { width:100%; max-width:260px; height:48px; font-size:13px; gap:10px; }
+@media(max-width:900px) {
+ .pagina-jogo { min-height:calc(100dvh - 68px); }
+ .conteudo-jogo { grid-template-columns:1fr; max-width:640px; padding:28px 24px; gap:30px; }
+ .card-jogo { max-width:380px; min-height:260px; padding:28px; gap:24px; }
+ .circulo-game { width:88px; height:88px; }
+ .gamepad { width:48px; height:48px; }
+}
+@media(min-width:901px) and (max-height:700px) {
+ .conteudo-jogo { padding-top:20px; padding-bottom:20px; }
+ .introducao,.historia-jogo { margin-bottom:18px; }
+ .card-jogo { min-height:290px; }
+}
