@@ -151,12 +151,14 @@
  
                         <h2>Entre em contato</h2> 
  
-                        <form id="contactForm"> 
+                        <form id="contactForm" action="https://formsubmit.co/vertexunasp31cti@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Novo contato pelo site MindMovie">
+                            <input type="hidden" name="_template" value="table"> 
  
                             <div class="input-group"> 
                                 <input 
                                     type="text" 
-                                    id="name" 
+                                    id="name" name="name" autocomplete="name" aria-label="Nome" maxlength="100" 
                                     placeholder="Nome" 
                                     required 
                                 > 
@@ -165,7 +167,7 @@
                             <div class="input-group"> 
                                 <input 
                                     type="email" 
-                                    id="email" 
+                                    id="email" name="email" autocomplete="email" aria-label="E-mail" maxlength="254" 
                                     placeholder="E-mail" 
                                     required 
                                 > 
@@ -173,7 +175,7 @@
  
                             <div class="input-group"> 
                                 <textarea 
-                                    id="message" 
+                                    id="message" name="message" aria-label="Mensagem" maxlength="5000" 
                                     placeholder="Mensagem" 
                                     required 
                                 ></textarea> 
@@ -184,7 +186,7 @@
                             </button> 
  
                             <p class="contact-note"> 
-                                Responderemos assim que possível. 
+                                Envio seguro pelo FormSubmit. Responderemos por e-mail. 
                             </p> 
  
                         </form> 
@@ -199,7 +201,7 @@
  
     </main> 
  
-    <script src="script.js"></script> 
+    <script src="script.js?v=contact-send"></script> 
  
 </body> 
 </html>

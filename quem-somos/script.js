@@ -1,42 +1,26 @@
-const EMAIL_DE_CONTATO = "";
-document.addEventListener("DOMContentLoaded", () => {
-    const formulario = document.getElementById("contactForm");
-    if (formulario) {
-
-        const aviso = document.createElement("p");
-        aviso.className = "contact-feedback";
-        aviso.setAttribute("role", "status");
-        aviso.style.marginTop = "12px";
-        formulario.appendChild(aviso);
-
-        formulario.addEventListener("submit", (evento) => {
-
-            evento.preventDefault();
-
-            const nome = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const mensagem = document.getElementById("message").value.trim();
-
-            if (!nome || !email || !mensagem) {
-                aviso.textContent = "Preencha nome, e-mail e mensagem.";
-                return;
-            }
-
-            if (!EMAIL_DE_CONTATO) {
-                aviso.textContent =
-                    "Formulário ainda sem destino configurado. " +
-                    "Defina EMAIL_DE_CONTATO em quem-somos/script.js.";
-                return;
-            }
-
-            const assunto = encodeURIComponent(`Contato pelo site - ${nome}`);
-            const corpo = encodeURIComponent(`${mensagem}\n\n---\n${nome}\n${email}`);
-
-            window.location.href =
-                `mailto:${EMAIL_DE_CONTATO}?subject=${assunto}&body=${corpo}`;
-
-            aviso.textContent = "Abrindo seu programa de e-mail.";
-            formulario.reset();
+/* Envio HTTPS pelo FormSubmit, com verificação antispam do serviço. */
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    const button = form.querySelector('button[type="submit"]');
+    const fields = ['name', 'email', 'message'].map(id => document.getElementById(id));
+    fields.forEach(field => field.addEventListener('input', () => field.setCustomValidity('')));
+    form.addEventListener('submit', event => {
+        fields.forEach(field => {
+            field.value = field.value.trim();
+            field.setCustomValidity(field.value ? '' : 'Preencha este campo.');
         });
-    }
+        if (!form.reportValidity()) {
+            event.preventDefault();
+            return;
+        }
+        // O navegador envia os campos e abre a confirmação do serviço.
+        // O conteúdo não é apagado antes de o envio ser confirmado.
+        button.disabled = true;
+        button.textContent = 'Enviando…';
+    });
+    window.addEventListener('pageshow', () => {
+        button.disabled = false;
+        button.textContent = 'Enviar mensagem';
+    });
 });
