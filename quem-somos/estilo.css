@@ -569,3 +569,6 @@ body {
 #contactForm button { height:36px; font-size:13px; }
 .contact-note { margin-top:8px; }
 .contact-feedback:empty { display:none; }
+
+.contact-feedback { margin-top:10px; font-size:12px; line-height:1.5; overflow-wrap:anywhere; }
+#contactForm button:disabled { opacity:.65; cursor:wait; }
